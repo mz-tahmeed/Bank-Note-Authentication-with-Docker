@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Nov 17 01:49:55 2020
+Created on Tue Nov 24 21:09:38 2020
 
 @author: tahmeed
 """
@@ -65,7 +65,7 @@ def predict_note_authentication(variance,skewness,curtosis,entropy):
 def main():
     st.title("Bank Authentication")
     html_temp = """
-    <div style="background-color:tomato;padding:10px">
+    <div style="background-color:red;padding:10px">
     <h2 style="color:white;text-align:center;">Streamlit Bank Authenticator ML App </h2>
     </div>
     """
