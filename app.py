@@ -63,10 +63,10 @@ def predict_note_authentication(variance,skewness,curtosis,entropy):
     return prediction
 
 def main():
-    st.title("Bank Authentication")
+    st.title("Bank Note Authentication")
     html_temp = """
     <div style="background-color:red;padding:10px">
-    <h2 style="color:white;text-align:center;">Streamlit Bank Authenticator ML App </h2>
+    <h2 style="color:white;text-align:center;">Streamlit Bank Note Authenticator ML App </h2>
     </div>
     """
     st.markdown(html_temp,unsafe_allow_html=True)
@@ -79,7 +79,8 @@ def main():
         result=predict_note_authentication(variance,skewness,curtosis,entropy)
     st.success('The output is {}'.format(result))
     if st.button("About"):
-        st.text("Lets LEarn")
+        st.text("Mohammad Zawad Tahmeed")
+        st.text("Lets Learn")
         st.text("Built with Streamlit")
 
 
